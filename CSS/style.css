@@ -1,0 +1,261 @@
+/* CSS RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+html{scroll-behavior:smooth}
+
+:root{
+    --navbar-height: 60px;
+}
+
+
+#logo{margin: 5px 14px;
+    
+    
+    
+}
+
+#logo img{
+    height: 62px;
+    margin: 9px 8px;
+    
+}
+
+/* NAVBAR */
+
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+
+
+}
+
+#navbar ul{
+    display: flex;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    
+} 
+
+
+#navbar ul li{
+    
+    list-style: none;
+    font-size: 1.1rem;
+}
+
+#navbar ul li a{
+    color: aliceblue;
+    display: block;
+    padding: 5px 37px;
+    text-decoration: none;
+    border-radius: 15px;
+
+
+}
+#navbar ul li a:hover{
+    color: rgb(0, 0, 0);
+    background-color: antiquewhite;
+}
+
+/* Home Section  */
+
+#home{
+    display:flex;
+    padding: 2px 105px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 450px;
+}
+
+#home::before{
+    content: "";
+    background: url(../bg2.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 75%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    
+}
+
+#home h1{
+    color: aliceblue;
+    text-align: center;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+#home p{
+    color: aliceblue;
+    font-size: 1.1rem;
+    font-family: 'Maven Pro', sans-serif;
+}
+/* Services section */
+
+#services{
+    margin: 2px;
+    display: flex;
+    padding-bottom: 40px;
+}
+
+
+#services  .box{ 
+    border: 2px solid brown;
+    margin: 10px 13px;
+    padding: 1px 2px;
+    border-radius: 20px;
+    background-color: rgb(248, 248, 248);
+    
+}
+#services .box img{
+    height: 150px;
+     margin: auto;
+    display: block;
+}
+
+#services .box p{
+    font-family:'Maven Pro', sans-serif ;
+}
+
+
+
+
+/* Client section */
+.client-item{
+    padding: 31px;
+}
+
+#client-section{
+    /* height: 337px; */
+    position: relative;
+    
+}
+#client-section::before{
+    content: " ";
+    position: absolute;
+    background: url('/bg.jpg');
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    
+}
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#clients img{
+    height: 132px;
+    
+}
+
+
+
+/* contact section */
+
+
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: " ";
+    position: absolute;
+    background: url('../contact.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+
+footer{
+    background-color: black;
+    color: azure;
+    padding: 10px 20px;
+    /* margin: 10px 5px; */
+}
+
+
+#contact-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 58px;
+}
+
+
+#contact-box input ,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.4rem;
+    border-radius: 12px;
+    font-size: 0.9rem;
+
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.1rem;
+    font-family: 'Maven Pro', sans-serif;
+
+
+}
+
+/* utilities */
+
+    .h-primary{
+        font-size: 2.6rem;
+        padding: 20px;
+        font-family: 'Maven Pro', sans-serif;
+    }
+    
+    .h-secondry{
+        font-size: 1.6rem;
+        padding: 20px;
+        font-family: 'Maven Pro', sans-serif;
+    }
+    
+    .btn{
+        padding: 6px 20px;
+        border: 2px solid beige;
+        background-color: #765858;
+        color: beige;
+        border-radius: 10px;
+        font-size: 1.1rem;
+        margin: 17px;
+        cursor: pointer;
+    }
+    
+    .center{
+        text-align: center;
+    }
